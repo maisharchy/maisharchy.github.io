@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maisha Rahman Chowdhury — Computer Science, AI Systems, LLM inference, operating systems, and software engineering.">
+  <title>Maisha Rahman Chowdhury | CS & AI Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">MRC<span>.</span></a>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-button" href="assets/Resume.Maisha.Chowdhury.pdf" target="_blank" rel="noopener">Resume ↗</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">COMPUTER SCIENCE · AI SYSTEMS · SOFTWARE</p>
+        <h1>Building systems that make <em>intelligent workloads</em> work better.</h1>
+        <p class="hero-text">
+          I'm Maisha Rahman Chowdhury, a computer scientist interested in AI systems,
+          operating systems, runtime adaptation, and software engineering. My current
+          research focuses on adaptive scheduling for concurrent LLM inference.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore my research</a>
+          <a class="button secondary" href="https://orcid.org/0009-0008-0693-8696" target="_blank" rel="noopener">View CV</a>
+        </div>
+        <div class="quick-links">
+          <a href="https://github.com/maisharchy" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="mailto:maisha.rchy@gmail.com">Email ↗</a>
+          <a href="https://doi.org/10.1145/3746467.3801501" target="_blank" rel="noreferrer">Published paper ↗</a>
+          <a href="https://orcid.org/0009-0008-0693-8696" target="_blank" rel="noopener">ORCID ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="terminal-top"><span></span><span></span><span></span></div>
+        <div class="terminal">
+          <p><span class="muted">$</span> whoami</p>
+          <p class="output">maisha.rahman.chowdhury</p>
+          <p><span class="muted">$</span> research --current</p>
+          <p class="output">adaptive agentic scheduling</p>
+          <p class="output">for concurrent LLM inference</p>
+          <p><span class="muted">$</span> stack</p>
+          <p class="output">Python · C/C++ · Java · Linux</p>
+          <p class="output">LangGraph · React · Node.js</p>
+          <p><span class="muted">$</span> status</p>
+          <p class="status">● building & researching</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div><div class="stat-number">3.72</div><div class="stat-label">Cumulative GPA</div></div>
+      <div><div class="stat-number">2026</div><div class="stat-label">B.S. Computer Science</div></div>
+      <div><div class="stat-number">ACMSE</div><div class="stat-label">2026 Publication</div></div>
+      <div><div class="stat-number">AI + OS</div><div class="stat-label">Research Focus</div></div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 · RESEARCH</p>
+          <h2>From runtime telemetry to adaptive systems.</h2>
+        </div>
+        <p class="section-intro">
+          My research explores how operating-system resource management can respond to
+          the changing behavior of AI workloads instead of treating every workload the same.
+        </p>
+      </div>
+
+      <article class="featured-research">
+        <div class="research-main">
+          <span class="tag">CURRENT RESEARCH · 2026–PRESENT</span>
+          <h3>Adaptive Agentic Scheduling for Multi-Model LLM Inference</h3>
+          <p>
+            Extending iGenOrch toward adaptive, learning-based orchestration for concurrent
+            LLM inference under resource constraints. The system uses a closed-loop LangGraph
+            architecture to collect CPU, memory, and inference-latency telemetry and represent
+            runtime conditions as system state.
+          </p>
+          <p>
+            I am investigating LinUCB contextual bandits alongside ε-greedy and stateless
+            LLM-agent policies, comparing average-latency and P90-latency objectives. The broader
+            direction is predictive, agentic scheduling that can anticipate contention and
+            proactively adapt resource allocation.
+          </p>
+          <div class="research-meta">
+            <span>LinUCB</span><span>LangGraph</span><span>Linux / OS control</span><span>LLM inference</span>
+          </div>
+        </div>
+        <div class="research-side">
+          <div class="loop">
+            <div>OBSERVE</div><span>→</span><div>DIAGNOSE</div><span>→</span><div>DECIDE</div><span>→</span><div>ACT</div><span>→</span><div>EVALUATE</div>
+          </div>
+          <p class="side-note">A closed-loop runtime control architecture for concurrent LLM workloads.</p>
+        </div>
+      </article>
+
+      <div class="research-grid">
+        <article class="research-card">
+          <span class="tag">PUBLICATION · ACMSE 2026</span>
+          <h3>iGenOrch</h3>
+          <p>
+            <strong>Intelligent Orchestration Framework for Multi-Model LLM Inference on Edge Platforms.</strong>
+            iGenOrch connects runtime telemetry with a modified Linux scheduling layer to manage
+            concurrent LLM workloads on constrained edge devices.
+          </p>
+          <p class="small">
+            The work monitors request latency, queue size, token throughput, CPU, and memory usage,
+            then adapts CPU affinity, process priority, concurrency, and batch size.
+          </p>
+          <div class="card-links">
+            <a href="https://doi.org/10.1145/3746467.3801501" target="_blank">DOI ↗</a>
+            <a href="https://dl.acm.org/doi/10.1145/3746467.3801501" target="_blank" rel="noopener">Published work ↗</a>
+          </div>
+        </article>
+
+        <article class="research-card">
+          <span class="tag">RELATED WORK · 2024</span>
+          <h3>Code-LLM Interpretability</h3>
+          <p>
+            Researched how code-trained LLMs label groups of code tokens and how those labels
+            compare with human annotation across lexical, syntactic, and semantic categories.
+          </p>
+          <p class="small">
+            Built a Tkinter annotation workflow and examined common LLM labeling errors, including
+            insufficient context and imprecise classifications.
+          </p>
+          <div class="card-links">
+            <a href="https://orcid.org/0009-0008-0693-8696" target="_blank" rel="noopener">Research notes ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="related-work">
+        <p class="eyebrow">RELATED WORK · RESEARCH CONTEXT</p>
+        <h3>Where my work fits</h3>
+        <p>
+          Prior work on efficient edge LLM inference has explored model compression, quantization,
+          optimized runtimes, speculative decoding, DVFS, model partitioning, SLO-aware serving,
+          and multi-model resource sharing. Other studies use runtime state or contextual learning
+          for model selection and serving decisions. My current work targets a complementary layer:
+          a closed-loop control mechanism that observes live model and system telemetry and translates
+          it into operating-system resource-management actions for heterogeneous LLM processes
+          executing concurrently, without modifying the underlying models or replacing the kernel scheduler.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 · PROJECTS</p>
+          <h2>Systems, applications, and algorithms.</h2>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card large">
+          <div class="project-top"><span class="project-number">05</span><span class="tag">FULL-STACK · AI</span></div>
+          <h3>AI Task Tracker</h3>
+          <p>
+            An AI-assisted task management application focused on organizing tasks and using intelligent
+            features to make planning and productivity more efficient.
+          </p>
+          <div class="tech">AI · Software Engineering · Task Management</div>
+          <a class="project-link" href="https://github.com/maisharchy/AI-Task-Tracker" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project-card large">
+          <div class="project-top"><span class="project-number">01</span><span class="tag">FULL-STACK</span></div>
+          <h3>Throwly</h3>
+          <p>
+            A full-stack startup application built during senior design. I worked across the
+            React/TypeScript frontend and Node.js backend, with a focus on identity verification,
+            item ranking, navigation, and reliability.
+          </p>
+          <ul>
+            <li>Integrated the Didit identity-verification workflow and verification gate.</li>
+            <li>Implemented impression-based ranking for the Free page feed.</li>
+            <li>Built and redesigned Account, Edit User, Settings, Search, and PointStore experiences.</li>
+            <li>Fixed map drop-off coordinates and reverse-geocoding behavior.</li>
+          </ul>
+          <div class="tech">React · TypeScript · Node.js · Firebase · APIs</div>
+          <a class="project-link" href="https://github.com/maisharchy/Throwly" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">02</span><span class="tag">SYSTEMS · C/C++</span></div>
+          <h3>Dungeon Crawler Game Engine</h3>
+          <p>
+            A terminal-based roguelike engine featuring procedural dungeon generation,
+            pathfinding, monster AI, event scheduling, and game-loop logic.
+          </p>
+          <ul>
+            <li>Random non-overlapping rooms and connected corridors.</li>
+            <li>Dijkstra pathfinding for tunneling and non-tunneling monsters.</li>
+            <li>Priority-queue event simulation and multiple monster behaviors.</li>
+          </ul>
+          <div class="tech">C · C++ · Data Structures · Dijkstra</div>
+          <a class="project-link" href="https://github.com/maisharchy/Dungeon-generator" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">03</span><span class="tag">BACKEND · REAL-TIME</span></div>
+          <h3>Clever Quest</h3>
+          <p>
+            A critical-thinking multiplayer game platform with Trivia and Guess-the-Number games.
+            I focused on backend architecture and real-time communication.
+          </p>
+          <ul>
+            <li>WebSocket-based multiplayer game logic and server handling.</li>
+            <li>Authentication, profiles, password reset, and problem reports.</li>
+            <li>REST APIs, relational data models, and testing.</li>
+          </ul>
+          <div class="tech">Java · Spring Boot · MySQL · MariaDB · WebSocket</div>
+          <a class="project-link" href="https://github.com/maisharchy/Project309" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">04</span><span class="tag">FRONTEND · FULL-STACK</span></div>
+          <h3>Anime Merchandise E-Commerce Prototype</h3>
+          <p>
+            A full-stack prototype with React interfaces, cart and checkout workflows,
+            Node.js API endpoints, inventory handling, authentication, and reusable UI state.
+          </p>
+          <div class="tech">React · Node.js · JavaScript · HTML · CSS</div>
+          <a class="project-link" href="https://github.com/maisharchy/Animax" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 · EXPERIENCE</p>
+          <h2>Research and teaching.</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="date">MAY 2026 — PRESENT</div>
+          <div>
+            <h3>Undergraduate Research Assistant · Dr. Asad W. Malik</h3>
+            <p>Adaptive Agentic Scheduling for Multi-Model LLM Inference</p>
+            <ul>
+              <li>Developing a closed-loop runtime scheduling architecture with LangGraph.</li>
+              <li>Applying contextual bandits to learn resource-management policies from telemetry.</li>
+              <li>Evaluating average and P90 latency objectives under concurrent workloads.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="date">MAY — AUG 2025</div>
+          <div>
+            <h3>Undergraduate Research Fellow · Mississippi State University</h3>
+            <p>Summer iEDGE REU</p>
+            <ul>
+              <li>Developed a Linux kernel-aware scheduler on Raspberry Pi 5 for concurrent LLM workloads.</li>
+              <li>Collected latency, CPU, and memory telemetry using Python and implemented scheduling logic in C.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="date">JUN — AUG 2024</div>
+          <div>
+            <h3>Undergraduate Research Assistant · Iowa State University</h3>
+            <p>Code-trained LLM interpretability</p>
+            <ul>
+              <li>Built a Tkinter annotation tool comparing GPT-generated and human labels.</li>
+              <li>Analyzed error patterns such as insufficient context and imprecise labeling.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="date">AUG — DEC 2024</div>
+          <div>
+            <h3>Teaching Assistant · Iowa State University</h3>
+            <p>ComS 127 · Python</p>
+            <ul>
+              <li>Taught labs, held office hours, assisted with assignments, and graded student work.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow">04 · ABOUT</p>
+        <h2>Curiosity first. Systems thinking always.</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I graduated from Iowa State University with a B.S. in Computer Science and a minor in
+          Applied AI. My academic work spans software engineering, systems, AI, and research.
+        </p>
+        <p>
+          I am particularly interested in questions at the boundary of AI and systems:
+          how intelligent workloads behave at runtime, how operating systems can respond to those
+          behaviors, and how learning-based methods can make resource management more adaptive.
+        </p>
+        <p>
+          Outside research, I enjoy building practical software and working close to the code,
+          whether that means designing a React interface, implementing a Spring Boot service,
+          debugging a systems program, or experimenting with LLM infrastructure.
+        </p>
+      </div>
+    </section>
+
+    <section class="section skills">
+      <p class="eyebrow">05 · TOOLKIT</p>
+      <div class="skill-cloud">
+        <span>Python</span><span>C</span><span>C++</span><span>Java</span><span>JavaScript</span>
+        <span>TypeScript</span><span>SQL</span><span>Linux</span><span>React</span><span>Node.js</span>
+        <span>Spring Boot</span><span>REST APIs</span><span>WebSocket</span><span>Firebase</span>
+        <span>MySQL</span><span>MariaDB</span><span>MongoDB</span><span>Git</span><span>LangGraph</span>
+        <span>LLM Evaluation</span><span>Machine Learning</span><span>Raspberry Pi</span><span>Bash</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">06 · CONTACT</p>
+      <h2>Interested in research, systems, or building something useful?</h2>
+      <p>I'm always open to conversations about AI systems, research opportunities, and software engineering.</p>
+      <a class="contact-email" href="mailto:maisha.rchy@gmail.com">maisha.rchy@gmail.com ↗</a>
+      <div class="contact-links">
+        <a href="https://github.com/maisharchy" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="assets/Resume.Maisha.Chowdhury.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        <a href="assets/CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+        <a href="https://doi.org/10.1145/3746467.3801501" target="_blank" rel="noreferrer">iGenOrch DOI</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Maisha Rahman Chowdhury</span>
+    <span>Built for GitHub Pages</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
