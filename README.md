@@ -1,6 +1,6 @@
 # Maisha Rahman Chowdhury — Portfolio
 
-A responsive, GitHub Pages-ready personal portfolio for Maisha Rahman Chowdhury.
+A responsive, GitHub Pages-ready personal portfolio for My works.
 
 ## Files
 
@@ -21,8 +21,8 @@ A responsive, GitHub Pages-ready personal portfolio for Maisha Rahman Chowdhury.
    ```
 4. In GitHub, open **Settings → Pages**.
 5. Select **Deploy from a branch**, choose `main`, and choose `/ (root)`.
-6. Your site will be available at `https://maisharchy.github.io`.
+6. My site will be available at `https://maisharchy.github.io`.
 
 ## Before publishing
 
-Replace or add the LinkedIn link if you want one. The project links currently point to the repositories supplied by Maisha where available.
+Replace links if you want one similar to this. The project links currently point to the repositories supplied by Maisha where available.
